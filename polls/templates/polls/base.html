@@ -1,0 +1,13 @@
+<!-- Tempalte base para la app 'polls' -->
+
+<!-- Cargamos el acceso a los static files: js, css, imgs, etc -->
+{% load static %}
+
+<!-- Linkeamos los stilos -->
+<link rel="stylesheet" type="text/css" href="{% static 'polls/styles.css' %}" />
+
+<!-- Definimos un bloque base para que los
+templates que extiendan implementen este bloque -->
+{% block content %}
+
+{% endblock content %}
