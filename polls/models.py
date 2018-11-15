@@ -22,8 +22,8 @@ class Question(models.Model):
     )
 
     # Definimos los campos del modelo Question
-    name = models.CharField(max_length=10, blank=False, null=False, default='')
-    pub_date = models.DateTimeField(blank=True, null=True, default=now)
+    name = models.CharField('Nombre', max_length=10, blank=False, null=False, default='')
+    pub_date = models.DateTimeField('Fecha de publicación', blank=True, null=True, default=now)
     target = models.CharField(
         # Indicamos la longitud máxima
         max_length=50,
