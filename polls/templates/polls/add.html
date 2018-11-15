@@ -1,0 +1,21 @@
+<!-- Declaramos stilos -->
+<style>
+    input, label {
+        display: block;
+    }
+</style>
+
+<!-- Declaramos un formulario que haga un POST a /polls/new -->
+<form action="new" method="post">
+    <!-- Declaramos el uso de un token CSRF -->
+    {% csrf_token %}
+    <!-- Renderizamos el formulario -->
+    {{ form }}
+    <!-- Definimos el botón de submit -->
+    <input type="submit" value="Enviar">
+</form>
+<!-- Mostramos un mensaje de éxito si tiene algo seteado -->
+{% if message %}
+    <!-- Mostramos un mensaje de éxito -->
+    <p style="color: green">{{ message }}</p>
+{% endif %}
