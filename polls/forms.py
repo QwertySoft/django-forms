@@ -13,5 +13,5 @@ class QuestionForm(ModelForm):
         labels = {
             'name': _('Nombre completo'),
             'target': _('Público objetivo'),
-            'reportes': _('Reportero')
+            'reporter': _('Reportero')
         }
