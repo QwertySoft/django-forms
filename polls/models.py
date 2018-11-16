@@ -34,7 +34,7 @@ class Question(models.Model):
         # Indicamos el texto helper a mostrar en un ModelForm
         help_text='Indique para que tipo de público esta destinada esta pregunta.'
     )
-    reporter = models.ForeignKey(Reporter, null=True, on_delete=models.CASCADE)
+    reporter = models.ForeignKey(Reporter, blank=True, null=True, on_delete=models.CASCADE)
 
     # Definimos la clase Meta para el modelo Question
     class Meta:
